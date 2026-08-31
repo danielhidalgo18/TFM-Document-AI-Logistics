@@ -1,6 +1,6 @@
 # Estudio comparativo de modelos de aprendizaje profundo para el tratamiento de documentación logística industrial
 
-Este repositorio contiene el código fuente y los materiales complementarios asociados al Trabajo de Fin de Máster
+Este repositorio contiene el código fuente y los materiales complementarios asociados al Trabajo de Fin de Máster.
 
 ## Resumen
 

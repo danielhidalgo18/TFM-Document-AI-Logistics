@@ -1,31 +1,34 @@
+# Estudio comparativo de modelos de aprendizaje profundo para el tratamiento de documentación logística industrial
 
-# Comparative Evaluation of Document AI Architectures for Key Information Extraction in Industrial Logistics
+Este repositorio contiene el código fuente y los materiales complementarios asociados al Trabajo de Fin de Máster
 
-This repository contains the source code and supplementary materials associated with the Bachelor's Thesis:
+## Resumen
 
-**"Comparative Evaluation of Document AI Architectures for Key Information Extraction in Industrial Logistics"**
+El sector de la logística industrial genera diariamente un gran volumen de albaranes y documentos mercantiles cuya digitalización y procesamiento manual suponen un importante cuello de botella operativo y económico. La automatización de este flujo presenta desafíos relevantes como la confidencialidad de los datos, la elevada diversidad de formatos y el deterioro físico de los documentos en los entornos de trabajo constituyen factores que limitan significativamente la eficacia de los sistemas tradicionales basados en reglas.
 
-## Abstract
+Para abordar estos retos, el presente trabajo propone un estudio empírico y comparativo de técnicas avanzadas de Inteligencia Artificial Documental orientadas a la extracción de información clave. Los algoritmos seleccionados representan el estado del arte actual y pueden desplegarse en entornos locales, garantizando la soberanía del dato.
 
-Document processing remains a critical challenge in industrial logistics environments, where delivery notes, invoices, and transport documents are frequently received in heterogeneous formats and under varying acquisition conditions.
+Desde el punto de vista metodológico, se utiliza inicialmente un conjunto de datos público para evaluar los modelos preentrenados y establecer una línea base de referencia. Posteriormente, se lleva a cabo un proceso de ajuste fino sobre un conjunto de datos sintético desarrollado específicamente para este trabajo, con el objetivo de adaptar los modelos al dominio logístico. Una vez completada esta adaptación, se introduce ruido visual controlado para analizar su impacto sobre el rendimiento de los distintos enfoques.
 
-This project evaluates and compares three different Document AI paradigms:
+Los resultados muestran que, bajo condiciones visuales favorables, arquitecturas multimodales como LayoutLMv3 alcanzan una elevada capacidad de extracción. Sin embargo, su rendimiento se reduce de forma notable ante altos niveles de degradación visual, debido a la propagación de errores procedentes del sistema de reconocimiento óptico de caracteres del que dependen. Por el contrario, el modelo generativo DONUT presenta una mayor robustez en escenarios visualmente adversos y adopta una estrategia de predicción más conservadora, orientada a minimizar las extracciones incorrectas.
 
-- PaddleOCR + Regular Expressions (Rule-Based Pipeline)
-- LayoutLMv3 (Multimodal Transformer)
-- DONUT (Document Understanding Transformer)
+En términos de eficiencia operativa, DONUT reduce significativamente los costes, tiempos de entrenamiento y mantiene una latencia de inferencia más estable frente a documentos degradados. En conjunto, los resultados indican que este paradigma generativo constituye la alternativa más adecuada para su despliegue en entornos productivos, al ofrecer el mejor equilibrio entre rendimiento, eficiencia y fiabilidad operativa.
 
-The study focuses on the trade-off between:
-
-- Information extraction accuracy
-- Robustness against document degradation
-- Computational efficiency
-
-A synthetic dataset of Spanish logistics delivery notes was generated to perform controlled experiments under different levels of visual degradation.
+**Palabras clave:** Inteligencia Artificial Documental, Extracción de Información Clave, Logística Industrial.
 
 ---
 
-## Repository Structure
+## Arquitecturas Evaluadas
+
+Este proyecto evalúa y compara tres paradigmas diferentes de IA Documental:
+
+*   **PaddleOCR + Expresiones Regulares:** Pipeline tradicional basado en reglas.
+*   **LayoutLMv3:** Transformer Multimodal (consciente del *layout*).
+*   **DONUT:** Transformer de Comprensión Documental (generativo de extremo a extremo y *OCR-free*).
+
+---
+
+## Estructura del Repositorio
 
 ```text
 .
@@ -45,9 +48,8 @@ A synthetic dataset of Spanish logistics delivery notes was generated to perform
 │   └── tables/
 │
 ├── docs/
-│   └── TFG_Daniel_Hidalgo.pdf
+│   └── TFM__Daniel_Hidalgo_Ocana_2026-07-22.pdf
 │
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-

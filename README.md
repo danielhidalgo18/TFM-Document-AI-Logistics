@@ -32,24 +32,25 @@ Este proyecto evalúa y compara tres paradigmas diferentes de IA Documental:
 
 ```text
 .
-├── src/
-│   ├── data_generation/
-│   ├── augmentation/
-│   ├── training/
-│   ├── evaluation/
-│   └── visualization/
+├.
+├── notebooks/                           
+│   ├── 01_TFM_Baseline_CORD__v7.ipynb   
+│   ├── 02_TFM_DONUT__v8.ipynb           
+│   └── 03_TFM_LayoutLMv3.ipynb          
 │
-├── examples/
+├── examples/                            
 │   ├── images/
 │   └── annotations/
 │
 ├── results/
+│   ├── metrics/                         
 │   ├── figures/
 │   └── tables/
 │
 ├── docs/
 │   └── TFM__Daniel_Hidalgo_Ocana_2026-07-22.pdf
 │
+├── .gitignore                           
 ├── requirements.txt
 ├── LICENSE
 └── README.md

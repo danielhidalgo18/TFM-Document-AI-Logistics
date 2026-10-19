@@ -39,13 +39,9 @@ Este proyecto evalúa y compara tres paradigmas diferentes de IA Documental:
 │   └── 03_TFM_LayoutLMv3.ipynb          
 │
 ├── examples/                            
-│   ├── images/
-│   └── annotations/
+│   └── images/
 │
-├── results/
-│   ├── metrics/                         
-│   ├── figures/
-│   └── tables/
+├── results/                        
 │
 ├── docs/
 │   └── TFM__Daniel_Hidalgo_Ocana_2026-07-22.pdf

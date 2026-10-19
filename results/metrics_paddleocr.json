@@ -1,0 +1,68 @@
+{
+  "n_docs": 500,
+  "ocr_vacios": 0,
+  "resumen": {
+    "micro_f1": 0.9112,
+    "macro_f1": 0.9112,
+    "weighted_f1": 0.9112,
+    "macro_cer": 0.06871666666666666,
+    "macro_anls": 0.9120126984126985
+  },
+  "per_field": {
+    "total": {
+      "precision": 0.998,
+      "recall": 0.998,
+      "f1": 0.998,
+      "cer": 0.00025,
+      "anls": 0.9997777777777779,
+      "support": 500,
+      "tp": 499,
+      "fp": 1,
+      "fn": 1
+    },
+    "numero_albaran": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "cer": 0.0,
+      "anls": 1.0,
+      "support": 500,
+      "tp": 500,
+      "fp": 0,
+      "fn": 0
+    },
+    "fecha": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "cer": 0.0,
+      "anls": 1.0,
+      "support": 500,
+      "tp": 500,
+      "fp": 0,
+      "fn": 0
+    },
+    "subtotal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "cer": 0.0,
+      "anls": 1.0,
+      "support": 500,
+      "tp": 500,
+      "fp": 0,
+      "fn": 0
+    },
+    "iva_21": {
+      "precision": 0.558,
+      "recall": 0.558,
+      "f1": 0.558,
+      "cer": 0.3433333333333333,
+      "anls": 0.5602857142857143,
+      "support": 500,
+      "tp": 279,
+      "fp": 221,
+      "fn": 221
+    }
+  }
+}
